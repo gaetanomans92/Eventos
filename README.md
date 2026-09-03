@@ -340,8 +340,8 @@
           <input type="hidden" name="_template" value="table">
           <div class="row">
             <div class="field">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="¿Cómo os llamáis?" required>
+              <label for="nombre">Cómo te llamas</label>
+              <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
             </div>
             <div class="field">
               <label for="contacto">Teléfono o email</label>
@@ -369,8 +369,8 @@
             <label>Número de personas</label>
             <div class="party">
               <div class="party-track" id="partyTrack"></div>
-              <div class="party-count" id="partyCount">12 personas</div>
-              <input type="hidden" id="personas" name="personas" value="12">
+              <div class="party-count" id="partyCount">10 personas</div>
+              <input type="hidden" id="personas" name="personas" value="10">
             </div>
           </div>
 
@@ -404,8 +404,8 @@
   // party-size selector: 2–24, step 2 — a table-setting rather than a generic number input
   const track = document.getElementById('partyTrack');
   const countLabel = document.getElementById('partyCount');
-  const sizes = [2,4,6,8,10,12,16,20,24];
-  let selected = 12;
+  const sizes = [10,12,14,16,18,20,24];
+  let selected = 10;
 
   function renderSeats(){
     track.innerHTML = '';
